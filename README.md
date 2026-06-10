@@ -20,7 +20,7 @@ Check *DAQ_PATH* and *CALIB_PATH*, and change them if necessary.
 source beam_env/bin/activate
 python monitor_BIN.py
 ```
-
+where _beam_env_ is an environment that has the necessary libraries.
 
 ## Superset connection
 
@@ -28,12 +28,9 @@ python monitor_BIN.py
 
 * Create a new database connection: Settings -> Database Connections -> +Database -> PostgreSQL
 
-* Host: localhost, Port: 5432, Database: beam_monitor, user: superset, password: superset
+* Host: localhost, Port: XXXX, Database: XXXX, user: XXXX, password: XXXX
 
-**If** you can't connect through this port because it's marked as closed, try the following:
-
-SQLAlchemiURI:
-postgresql+psycopg2://superset:superset@db:5432/beam_monitor
+**If** you can't connect through this port because it's marked as closed, try through SQLAlchemiURI.
 
 -> Test Connection and then **Connect**
 
